@@ -15,10 +15,10 @@ class HotelController extends Controller
     function __construct()
     {
         //
-        $this->middleware('permission:room-list|room-create|room-edit|room_delete',['only'=>['index','show']]);
-        $this->middleware('permission:room-create',['only'=>['create','store']]);
-        $this->middleware('permission:room-edit',['only'=>['edit','update']]);
-        $this->middleware('permission:room-delte',['only'=>['destroy']]);
+        $this->middleware('permission:hotels-list|hotels-create|hotels-edit|hotels_delete',['only'=>['index','show']]);
+        $this->middleware('permission:hotels-create',['only'=>['create','store']]);
+        $this->middleware('permission:hotels-edit',['only'=>['edit','update']]);
+        $this->middleware('permission:hotels-delte',['only'=>['destroy']]);
     }
 
     /**
